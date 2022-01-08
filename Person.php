@@ -12,16 +12,28 @@ class Person
         $this->lastName = $lastName;
         $this->age = $age;
     }
+
+    public function fullname()
+    {
+        return $this->firstName . ' ' . $this->lastName . ' a ' . $this->age . ' ans ';
+    }
+
+    public function bouger($action)
+    {
+        return  "et est en train de " . $action . '.';
+    }
 }
 
 $honore = new Person('Honore','Balzac',34);
 $bob = new Person('Bob','l\'éponge',45);
 
-echo $honore->firstName . '<br>';
-echo $honore->lastName . '<br>';
-echo $honore->age . '<br>';
-echo $bob->firstName . '<br>';
-echo $bob->lastName . '<br>';
-echo $bob->age . '<br>';
+
+$actionHonore = $honore->bouger('sauter');
+$actionBob = $bob->bouger('danser');
+$fullNameHonore = $honore->fullname();
+$fullNameBob = $bob->fullname();
+
+echo $fullNameHonore . $actionHonore . '<br>';
+echo $fullNameBob . $actionBob . '<br>';
 
 ?>
