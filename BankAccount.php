@@ -3,6 +3,7 @@
 class BankAccount
 {
     public $accountNumber;
+    public $balance = 0;
 
     public function __construct($accountNumber)
     {
@@ -12,7 +13,8 @@ class BankAccount
 
 $compteBancaireDeHonore = new BankAccount('1234567');
 
-echo $compteBancaireDeHonore->accountNumber . '<br>';
-
+echo 'n° de compte: ' . $compteBancaireDeHonore->accountNumber . '<br>';
+$compteBancaireDeHonore->balance = 5000;
+echo 'balance: ' . $compteBancaireDeHonore->balance . '<br>';
 
 ?>
