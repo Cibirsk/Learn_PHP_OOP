@@ -3,7 +3,7 @@
 class BankAccount
 {
     public $accountNumber;
-    public $balance = 0;
+    private $balance = 0;
 
     public function __construct($accountNumber)
     {
