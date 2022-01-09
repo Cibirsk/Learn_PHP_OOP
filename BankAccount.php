@@ -18,12 +18,20 @@ class BankAccount
         }
         $this->balance = $balance;
     }
+
+    public function getBalance()
+    {
+        return $this->balance;
+    }
 }
 
 $compteBancaireDeHonore = new BankAccount('1234567');
 
 echo 'n° de compte: ' . $compteBancaireDeHonore->accountNumber . '<br>';
-$compteBancaireDeHonore->balance = 120;
-echo 'balance: ' . $compteBancaireDeHonore->balance . '<br>';
+
+$compteBancaireDeHonore->setBalance(12000);
+
+echo 'balance: ' . $compteBancaireDeHonore->getBalance() . '<br>';
+
 
 ?>
