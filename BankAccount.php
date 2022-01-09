@@ -3,11 +3,15 @@
 class BankAccount
 {
     public $accountNumber;
+    public $accountOwner;
     private $balance = 0;
+    public static $totalCount = 0;
 
-    public function __construct($accountNumber)
+    public function __construct($accountNumber,$accountOwner)
     {
        $this->accountNumber = $accountNumber; 
+       $this->accountOwner = $accountOwner;
+       static::$totalCount++;
     }
 
     public function setBalance($balance)
@@ -25,13 +29,16 @@ class BankAccount
     }
 }
 
-$compteBancaireDeHonore = new BankAccount('1234567');
+$compteBancaireDeHonore = new BankAccount('1234567','Honore');
+$compteBancaireDeBob = new BankAccount('7654321','Bob');
 
-echo 'n° de compte: ' . $compteBancaireDeHonore->accountNumber . '<br>';
+echo 'le compte n° : ' . $compteBancaireDeHonore->accountNumber . ' appartient à ' . 
+    $compteBancaireDeHonore->accountOwner . '<br>';
 
 $compteBancaireDeHonore->setBalance(12000);
 
 echo 'balance: ' . $compteBancaireDeHonore->getBalance() . '<br>';
 
+echo BankAccount::$totalCount . '<br>';
 
 ?>
