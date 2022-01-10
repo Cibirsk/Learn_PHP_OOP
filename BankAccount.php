@@ -2,6 +2,7 @@
 
 class BankAccount
 {
+    const TAX = 0.8;
     public $accountNumber;
     public $accountOwner;
     private $balance = 0;
@@ -46,4 +47,5 @@ echo 'balance: ' . $compteBancaireDeHonore->getBalance() . '<br>';
 
 echo BankAccount::getTotalCount() . '<br>';
 
+echo BankAccount::TAX;
 ?>
