@@ -1,11 +1,7 @@
 <?php
 
-require 'Papa.php';
-require 'Enfant.php';
+require 'Forme.php';
+require 'Carre.php';
+require 'Triangle.php';
 
-$multi = new Enfant;
-
-echo $multi->auCarre(4) . '<br>';
-echo $multi->plusUn(2);
-
-?>
+echo (new Triangle(5))->aire();

@@ -20,6 +20,11 @@ class Voiture
     {
         echo "Driiing <br>";
     }
+
+    private function relierFilBleuFilRouge()
+    {
+
+    }
 }
 
 

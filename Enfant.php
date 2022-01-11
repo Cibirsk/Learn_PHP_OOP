@@ -9,5 +9,3 @@ class Enfant extends Papa
     }
 }
 
-
-?>
