@@ -2,9 +2,9 @@
 
 class Papa
 {
-    public function getNbrTete()
+    public function auCarre($x)
     {
-        return 1;
+        return $x*$x;
     }
 }
 

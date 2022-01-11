@@ -3,7 +3,9 @@
 require 'Papa.php';
 require 'Enfant.php';
 
-$enfant = new Enfant;
-echo $enfant->getNbrTete();
+$multi = new Enfant;
+
+echo $multi->auCarre(4) . '<br>';
+echo $multi->plusUn(2);
 
 ?>
