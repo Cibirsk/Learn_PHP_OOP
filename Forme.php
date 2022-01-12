@@ -2,8 +2,10 @@
 
 class Forme
 {
-    public function aire()
+    public $aireGenerale = 100;
+
+    public function aireForme()
     {
-        return 'aire function forme';
+        return $this->aireGenerale;
     }
 }

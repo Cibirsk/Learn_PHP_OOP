@@ -4,7 +4,7 @@ class Carre extends Forme
 {
    private $cote = 4;
    
-   public function aire()
+   public function aireCarre()
    {
        return $this->cote * $this->cote;
    }
