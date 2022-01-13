@@ -4,8 +4,11 @@ require 'Forme.php';
 require 'Carre.php';
 require 'Triangle.php';
 require 'Cercle.php';
-
+require 'Person';
+require 'Policier';
 
 echo 'aire carré Parent: ' . (new Forme)->aireForme() . '<br>';
 echo 'aire carre enfant: ' . (new Carre)->aireForme() . '<br>';
 echo 'aire carré: ' . (new Carre)->aireCarre() . '<br>';
+
+//echo (new Person('Bob','Denard',23))->fullname();
