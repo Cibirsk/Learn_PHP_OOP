@@ -21,4 +21,3 @@ class Str
 $str = new Str;
 echo $str->upper('bob is cool ! <br> ');
 echo Str::upper('mike is nervous <br>');
-?>

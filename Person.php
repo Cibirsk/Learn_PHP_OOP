@@ -23,7 +23,7 @@ class Person
         return  "et est en train de " . $action . '.';
     }
 }
-
+/*
 $honore = new Person('Honore','Balzac',34);
 $bob = new Person('Bob','l\'éponge',45);
 
@@ -35,5 +35,4 @@ $fullNameBob = $bob->fullname();
 
 echo $fullNameHonore . $actionHonore . '<br>';
 echo $fullNameBob . $actionBob . '<br>';
-
-?>
+*/

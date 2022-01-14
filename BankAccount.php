@@ -48,4 +48,3 @@ echo 'balance: ' . $compteBancaireDeHonore->getBalance() . '<br>';
 echo BankAccount::getTotalCount() . '<br>';
 
 echo BankAccount::TAX;
-?>
