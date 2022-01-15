@@ -9,7 +9,7 @@ class Policier extends Person
        parent::__construct($firstName,$lastName,$age);
        $this->grade = $grade;
     }
-
+    
     public function fullname()
     {
         return parent::fullname() . ' policier, ' . $this->grade;
