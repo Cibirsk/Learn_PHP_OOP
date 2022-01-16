@@ -2,20 +2,20 @@
 
 class A 
 {
-    public function toto()
+    private static $attribut1 = 9;
+
+    public function methode1()
     {
-        echo 'methode toto appelé depuis class A <br>';
+        echo self::$attribut1;
     }
 }
 
-class B extends A
+class B extends A 
 {
-    public function tata()
+    public function methode1()
     {
-        parent::toto();
-        echo 'methode tata appelé depuis class B <br>';
+        parent::methode1();
     }
 }
 
-(new b)->tata();
-
+(new B)->methode1();
