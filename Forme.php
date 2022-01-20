@@ -1,6 +1,6 @@
 <?php
 
-class Forme
+abstract class Forme
 {
     public $aireGenerale = 100;
 

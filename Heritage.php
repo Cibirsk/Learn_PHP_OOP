@@ -12,4 +12,6 @@ require 'Policier.php';
 //echo 'aire carré: ' . (new Carre)->aireCarre() . '<br>';
 
 //echo (new Person('Bob','Denard',23))->fullname();
-echo (new Policier('Mike','Dan',34,'Sergent'))->fullname();
+//echo (new Policier('Mike','Dan',34,'Sergent'))->fullname();
+
+echo (new Carre)->aireForme();
