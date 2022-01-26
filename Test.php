@@ -2,21 +2,18 @@
 
 class A 
 {
-    private static $attribut1 = 8;
-
-    public function methode1()
+    public function toto($x)
     {
-        echo static::$attribut1;
+        echo 'toto de A' . $x;
     }
 }
 
-
-class B extends A 
+class B 
 {
-    public function methode1()
+    public function toto($x)
     {
-        parent::methode1();
+        echo 'toto de B' . $x;
     }
 }
 
-(new B)->methode1();
+(new A)->toto(5);

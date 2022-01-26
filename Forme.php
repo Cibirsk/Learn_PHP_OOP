@@ -8,4 +8,7 @@ abstract class Forme
     {
         return $this->aireGenerale;
     }
+
+    abstract function test();
+    
 }
