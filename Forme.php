@@ -2,13 +2,8 @@
 
 abstract class Forme
 {
-    public $aireGenerale = 100;
 
-    public function aireForme()
-    {
-        return $this->aireGenerale;
-    }
+    abstract public function aire();
 
-    abstract function test();
     
 }

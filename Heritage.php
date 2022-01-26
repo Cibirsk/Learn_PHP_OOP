@@ -14,4 +14,14 @@ require 'Policier.php';
 //echo (new Person('Bob','Denard',23))->fullname();
 //echo (new Policier('Mike','Dan',34,'Sergent'))->fullname();
 
-echo (new Carre)->aireForme();
+//echo (new Carre)->aireForme();
+
+class Boom
+{
+    public function test(Forme $forme)
+    {
+        echo $forme->aire();
+    }
+}
+
+(new Boom)->test(new Carre);
