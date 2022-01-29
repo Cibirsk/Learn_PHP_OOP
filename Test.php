@@ -1,30 +1,23 @@
 <?php
 
-class A 
+class Person
 {
-    public function toto($x)
-    {
-        echo 'toto de A' . $x;
-    }
-}
+    private $name;
 
-class B 
-{
-    public function toto($x)
+    public function __construct($name)
     {
-        echo 'toto de B' . $x;
+       $this->name = $name; 
     }
 }
 
 class Team
 {
     private $name;
-    private $nbrFan;
+    private $nbrFan = 0;
 
-    public function __construct($name,$nbrFan)
+    public function __construct($name)
     {
         $this->name = $name;
-        $this->nbrFan = $nbrFan;
     }
 
     public function get_name()
@@ -49,8 +42,29 @@ class League
         $this->team = [];
     }
 
-    public function add_team($team)
+    public function get_name()
+    {
+        return $this->name;
+    }
+
+    public function add_team(Team $team)
     {
         $this->team[] = $team;
     }
+
+    public function get_teamCount()
+    {
+        return count($this->team);
+    }
 }
+
+$paris = new Team('Paris');
+echo $paris->get_name() . ' a ' . $paris->get_nbrFan() . ' fans. <br>';
+
+$nantes = new Team('Nantes');
+echo $nantes->get_name() . ' a ' . $nantes->get_nbrFan() . ' fans. <br>';
+
+$ligua = new League('ligua');
+$ligua->add_team($paris);
+$ligua->add_team($nantes);
+echo 'Il y a ' . $ligua->get_teamCount() . ' équipe(s) dans la ' . $ligua->get_name();
