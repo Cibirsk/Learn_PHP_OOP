@@ -1,6 +1,7 @@
 <?php
 
 
+
 class Personne
 {
     private $name;
@@ -87,4 +88,3 @@ $ligua->add_team($paris);
 $ligua->add_team($nantes);
 echo 'Il y a ' . $ligua->get_teamCount() . ' équipe(s) dans la '
 . $ligua->get_name() . '<br>';
-
