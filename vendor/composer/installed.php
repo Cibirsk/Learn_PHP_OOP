@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '565b563f7aa4a3bfc2f9d909820fe7448de1b0a4',
+        'reference' => '8cd902a31fdc5147b96630f11eb94875ee10d1e8',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '565b563f7aa4a3bfc2f9d909820fe7448de1b0a4',
+            'reference' => '8cd902a31fdc5147b96630f11eb94875ee10d1e8',
             'dev_requirement' => false,
         ),
         'fzaninotto/faker' => array(

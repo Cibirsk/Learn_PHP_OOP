@@ -1,6 +1,8 @@
 <?php
 
-
+require 'src/Person.php';
+require 'src/League.php';
+require 'src/Team.php';
 
 
 $paris = new Team('Paris');
