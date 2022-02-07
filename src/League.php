@@ -1,5 +1,5 @@
 <?php
-
+namespace Acme;
 
 class League
 {
