@@ -1,12 +1,15 @@
 <?php
 
 require 'vendor/autoload.php';
+use Acme\League;
+use Acme\Person;
+use Acme\Team;
 
-$paris = new Acme\Team('Paris');
-$nantes = new Acme\Team('Nantes');
+$paris = new Team('Paris');
+$nantes = new Team('Nantes');
 
-$bob = new Acme\Person('Bob');
-$mike = new Acme\Person('Mike');
+$bob = new Person('Bob');
+$mike = new Person('Mike');
 $bob->favorite($paris);
 $mike->favorite($paris);
 $mike->favorite($nantes);
