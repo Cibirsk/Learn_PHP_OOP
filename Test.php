@@ -1,24 +1,23 @@
 <?php
 
-require 'vendor/autoload.php';
 use Acme\League;
 use Acme\Person;
 use Acme\Team;
 
-$paris = new Team('Paris');
-$nantes = new Team('Nantes');
+$aubagne = new Team('Aubagne');
+$berg = new Team('Berg');
 
 $bob = new Person('Bob');
 $mike = new Person('Mike');
-$bob->favorite($paris);
-$mike->favorite($paris);
-$mike->favorite($nantes);
+$bob->favorite($aubagne);
+$mike->favorite($aubagne);
+$mike->favorite($berg);
 
-echo $paris->get_name() . ' a ' . $paris->get_nbrFan() . ' fans. <br>';
-echo $nantes->get_name() . ' a ' . $nantes->get_nbrFan() . ' fans. <br>';
+echo $aubagne->get_name() . ' a ' . $aubagne->get_nbrFan() . ' fans. <br>';
+echo $berg->get_name() . ' a ' . $berg->get_nbrFan() . ' fans. <br>';
 
 $ligua = new Acme\League('ligua');
-$ligua->add_team($paris);
-$ligua->add_team($nantes);
+$ligua->add_team($aubagne);
+$ligua->add_team($berg);
 echo 'Il y a ' . $ligua->get_teamCount() . ' équipe(s) dans la '
 . $ligua->get_name() . '<br>';
