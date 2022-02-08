@@ -1,7 +1,7 @@
 <?php
 namespace Acme;
 
-class Personne
+class Person
 {
     private $name;
 

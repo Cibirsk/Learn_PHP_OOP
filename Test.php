@@ -5,8 +5,8 @@ require 'vendor/autoload.php';
 $paris = new Acme\Team('Paris');
 $nantes = new Acme\Team('Nantes');
 
-$bob = new Acme\Personne('Bob');
-$mike = new Acme\Personne('Mike');
+$bob = new Acme\Person('Bob');
+$mike = new Acme\Person('Mike');
 $bob->favorite($paris);
 $mike->favorite($paris);
 $mike->favorite($nantes);
