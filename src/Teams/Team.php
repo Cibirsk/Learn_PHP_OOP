@@ -1,5 +1,5 @@
 <?php
-namespace Acme;
+namespace Acme\Teams;
 
 
 class Team

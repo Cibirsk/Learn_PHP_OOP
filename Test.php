@@ -2,7 +2,7 @@
 
 use Acme\League;
 use Acme\Person;
-use Acme\Team;
+use Acme\Teams\Team;
 
 $aubagne = new Team('Aubagne');
 $berg = new Team('Berg');

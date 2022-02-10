@@ -1,6 +1,8 @@
 <?php
 namespace Acme;
 
+use Acme\Teams\Team;
+
 class Person
 {
     private $name;
