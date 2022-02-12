@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit5daca51fb33f2c30c32c964dabc616bc
 {
+    public static $files = array (
+        'cf74a1b9e6ff543467e13ba8cb67bbf2' => __DIR__ . '/../..' . '/src/help.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
@@ -21,7 +25,11 @@ class ComposerStaticInit5daca51fb33f2c30c32c964dabc616bc
     );
 
     public static $classMap = array (
+        'Acme\\League' => __DIR__ . '/../..' . '/src/League.php',
+        'Acme\\Person' => __DIR__ . '/../..' . '/src/Person.php',
+        'Acme\\Teams\\Team' => __DIR__ . '/../..' . '/src/Teams/Team.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Song' => __DIR__ . '/../..' . '/Song.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

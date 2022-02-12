@@ -1,14 +1,19 @@
 <?php
 
+
 use Acme\League;
 use Acme\Person;
 use Acme\Teams\Team;
 
+echo random_number() . '<br>';
+
+new \Song;
+
 $aubagne = new Team('Aubagne');
 $berg = new Team('Berg');
 
-$bob = new Person('Bob');
-$mike = new Person('Mike');
+$bob = new Person('Bob', new \Song);
+$mike = new Person('Mike', new \Song);
 $bob->favorite($aubagne);
 $mike->favorite($aubagne);
 $mike->favorite($berg);
