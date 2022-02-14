@@ -2,7 +2,12 @@
 
 class Carre extends Forme
 {
-   private $cote = 4;
+   private $cote;
+
+   public function __construct($cote)
+   {
+      $this->cote = $cote; 
+   }
    
    public function aire()
    {

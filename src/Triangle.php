@@ -2,8 +2,14 @@
 
 class Triangle extends Forme
 {
-    private $base = 4;
-    private $hauteur = 3;
+    private $base;
+    private $hauteur;
+
+    public function __construct($base,$hauteur)
+    {
+       $this->base = $base;
+       $this->hauteur = $hauteur; 
+    }
 
     public function aire()
     {

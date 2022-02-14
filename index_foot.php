@@ -1,5 +1,6 @@
 <?php
 
+require 'vendor/autoload.php';
 
 use Acme\League;
 use Acme\Person;
