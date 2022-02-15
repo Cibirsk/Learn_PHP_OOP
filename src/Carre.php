@@ -1,6 +1,6 @@
 <?php
 
-class Carre extends Forme
+class Carre implements Forme
 {
    private $cote;
 

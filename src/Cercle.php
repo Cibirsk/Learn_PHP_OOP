@@ -1,7 +1,7 @@
 <?php
 
 
-class Cercle extends Forme
+class Cercle implements Forme
 {
     private $rayon;
 

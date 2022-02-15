@@ -9,6 +9,10 @@ return array(
     'Acme\\League' => $baseDir . '/src/League.php',
     'Acme\\Person' => $baseDir . '/src/Person.php',
     'Acme\\Teams\\Team' => $baseDir . '/src/Teams/Team.php',
+    'Carre' => $baseDir . '/src/Carre.php',
+    'Cercle' => $baseDir . '/src/Cercle.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Forme' => $baseDir . '/src/Forme.php',
     'Song' => $baseDir . '/Song.php',
+    'Triangle' => $baseDir . '/src/Triangle.php',
 );

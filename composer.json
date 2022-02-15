@@ -4,7 +4,8 @@
             "src/help.php"
         ],
         "classmap": [
-            "Song.php"
+            "Song.php",
+            "src"
         ],
         "psr-4": {
             "Acme\\": "src"

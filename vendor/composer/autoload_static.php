@@ -28,8 +28,12 @@ class ComposerStaticInit5daca51fb33f2c30c32c964dabc616bc
         'Acme\\League' => __DIR__ . '/../..' . '/src/League.php',
         'Acme\\Person' => __DIR__ . '/../..' . '/src/Person.php',
         'Acme\\Teams\\Team' => __DIR__ . '/../..' . '/src/Teams/Team.php',
+        'Carre' => __DIR__ . '/../..' . '/src/Carre.php',
+        'Cercle' => __DIR__ . '/../..' . '/src/Cercle.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Forme' => __DIR__ . '/../..' . '/src/Forme.php',
         'Song' => __DIR__ . '/../..' . '/Song.php',
+        'Triangle' => __DIR__ . '/../..' . '/src/Triangle.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
