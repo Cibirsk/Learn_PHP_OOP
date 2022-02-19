@@ -7,10 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInit5daca51fb33f2c30c32c964dabc616bc
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'cf74a1b9e6ff543467e13ba8cb67bbf2' => __DIR__ . '/../..' . '/src/help.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Yaml\\' => 23,
+        ),
         'A' => 
         array (
             'Acme\\' => 5,
@@ -18,6 +24,14 @@ class ComposerStaticInit5daca51fb33f2c30c32c964dabc616bc
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
         'Acme\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

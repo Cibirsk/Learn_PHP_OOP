@@ -10,5 +10,8 @@
         "psr-4": {
             "Acme\\": "src"
         }
+    },
+    "require": {
+        "symfony/yaml": "^6.0"
     }
 }

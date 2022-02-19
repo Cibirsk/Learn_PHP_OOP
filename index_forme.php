@@ -17,3 +17,5 @@ function criAnimal(Animal $animal)
 
 criAnimal(new Chat);
 criAnimal(new Chien);
+
+echo __DIR__;
